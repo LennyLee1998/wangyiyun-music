@@ -1,0 +1,192 @@
+.header>.top {
+  height: 70px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000;
+  background-color: #242424;
+}
+
+.topbar {
+  /* 两边布局 */
+  display: flex;
+  justify-content: space-between;
+  /* 现在bar-left的height:auto,
+  align-items:normal->stretch,会完全占据父元素的高度，而这正是我们所要的，如果设置center，会导致其只有包裹内容的高度 */
+  /* align-items: center; */
+  /* 内容部分减去border只有69px */
+  height: 70px;
+  /* line-height可以继承 */
+  line-height: 70px;
+  /* background-color: #f00; */
+}
+.topbar .bar-left{
+  display: flex;
+}
+
+.topbar .bar-left .logo{
+  
+  /* 精灵图设置到h1/a上面效果是一样的 */
+  background: url(../images/topbar_sprite.png) no-repeat 0 0;
+}
+.topbar .bar-left .logo a{
+  /* a为block才能继承行高，并且达到和原网页一样的效果 */
+  display:block;
+  width: 157px;
+  padding-right: 20px;
+  /*text-indent的定义是设置一个块元素首行文本内容之前的缩进量，让文字不见 */
+  text-indent: -9999px;
+}
+
+.topbar .bar-left .list{
+  display: flex;
+}
+.topbar .bar-left .list .item{
+  /* 相对定位不会脱离标准流 */
+  /* 用relative比较好，因为之后其他的item也要 */
+  position: relative;
+  display: block;
+  padding: 0 19px;
+  font-size: 14px;
+  color: #ccc;
+}
+.topbar .bar-left .list .item:hover,
+.topbar .bar-left .list .item.active{
+  color: #fff;
+  background-color: #000;
+}
+.topbar .bar-left .list .item.active::after{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 7px;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  margin: 0 auto;
+  background: url(../images/topbar_sprite.png) no-repeat -226px 0;
+}
+.topbar .bar-left .list .item.download .icon-hot{
+  /* 每个hot的位置不一样 */
+  position: absolute;;
+  top: 20px;
+  right: -15px;
+}
+
+/* 布局右侧 */
+.topbar .bar-right{
+  display: flex;
+  align-items: center;
+  padding-right:22px;
+}
+.topbar .bar-right .login{
+  /* 居中 */
+  /* position: relative;
+  top: 50%;
+  transform: translateY(-50%); */
+  width: 28px;
+  height: 45px;
+  line-height: 45px;
+  /* margin-top: 19px; */
+  margin-left: 20px;
+  
+
+}
+
+.topbar .bar-right .login a{
+  display:inline-block;
+  width: 28px;
+  height: 16px;
+  line-height: 16px;
+  /* margin-top: 7px; */
+  color: #787878;
+}
+.topbar .bar-right .login:hover a{
+  color: #999;
+}
+.topbar .bar-right .login a:hover{
+  text-decoration: underline;
+  color: #787878; 
+}
+
+.topbar .bar-right .author a{
+  /* 行内块级元素的居中 */
+  /* 由于vertical-align所以保持的居中,和上面的topbar里面的line-height有关，同时也和body的字体大小相等有关系，所以这里字体的居中和line-height无关，即使是行内元素也会居中 */
+  /* 但是当其是block元素时，vertical-align无效，则无法居中 */
+  display:inline-block;
+  width: 90px;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #4f4f4f;
+  border-radius: 15px;
+  margin-left: 12px;
+  line-height:32px; 
+  text-align: center;
+  color: #ccc;
+  
+}
+.topbar .bar-right .author a:hover{
+  border: 1px solid #fff;
+  color: #fff;
+  
+}
+.topbar .bar-right .search{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 158px;
+  height: 32px; 
+  box-sizing: border-box;
+  padding-right: 10px;
+  border-radius:30px;
+  /* 要求搜索图标后面不能有别的东西 */
+  background:#fff url(../images/topbar_sprite.png) 0 -99px;
+}
+.topbar .bar-right .search input{
+  width: 118px;
+  font-size: 12px;
+  
+}
+/* 伪元素 */
+/* 一般用label */
+/* .topbar .bar-right .search input::-webkit-input-placeholder{
+  color: #999;
+} */
+
+/* topnav */
+.nav{
+  height: 35px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #a40011;
+  line-height: 35px;
+  background-color: #C20C0C;
+}
+.navbar{
+  /* 之所以这里没有继承line-height是因为里面没有内容，只有当有内容的时候才会生效 */
+  /* height: 34px; */
+  /* background-color: #0f0; */
+  box-sizing: border-box;
+  padding-left: 180px;
+}
+.navbar .list{
+  display: flex;
+}
+.navbar .list .item{
+  display: inline-block;
+}
+
+.navbar .list .item span {
+  display: inline-block;
+  height: 20px;
+  line-height: 21px;
+  box-sizing: border-box;
+  padding: 0 13px;
+  border-radius:21px ;
+  margin: 7px 17px ;
+  color: #fff;
+  
+}
+.navbar .list .item.active span,
+.navbar .list .item:hover span{
+ 
+  background-color: #9B0909;
+  
+}

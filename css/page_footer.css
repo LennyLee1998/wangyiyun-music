@@ -1,0 +1,120 @@
+.footer {
+  height: 172px;
+  border-top: 1px solid #d3d3d3;
+  background-color: #f2f2f2;
+}
+
+.footer .btarea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .lfarea {
+  padding-top: 15px;
+
+}
+
+.footer .lfarea .list {
+  display: flex;
+  height: 24px;
+  line-height: 24px;
+}
+
+.footer .lfarea .list .item {
+  color: #999;
+}
+
+.footer .lfarea .list .item:hover {
+  text-decoration: underline;
+}
+
+.footer .lfarea .list .line {
+  margin: 0 4px 0 4px;
+  color: #c2c2c2;
+}
+
+.footer .lfarea p,
+.footer .lfarea a {
+  height: 24px;
+  line-height: 24px;
+  color: #666;
+}
+
+.footer .lfarea a.police::before {
+  content: "";
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+  background: url(../images/police.png) no-repeat;
+  background-size: contain;
+
+
+}
+
+.footer .lfarea a:hover {
+  text-decoration: underline;
+}
+
+/* 右边区域 */
+.footer .rgarea .list li{
+  width: 60px;
+  height: 70px;
+  margin-left: 30px;
+  text-align: center;
+}
+.footer .rgarea .list{
+  display: flex;
+  margin-top: 33px;
+  color: #666;
+}
+.footer .rgarea .list .item{
+  display:inline-block;
+  width: 50px;
+  height: 45px;
+  background: url(../images/foot_enter_new.png) no-repeat;
+  background-size:110px 552px ;
+}
+.footer .rgarea .list .item.icon-1{
+  background-position: -63px -456.5px;
+}
+.footer .rgarea .list .item.icon-2{
+  background-position: -63px -101px ;
+}
+.footer .rgarea .list .item.icon-3{
+  background-position:0 0 ;
+}
+.footer .rgarea .list .item.icon-4{
+  background-position:-60px -50px;
+}
+.footer .rgarea .list .item.icon-5{
+  background-position:0 -101px;
+}
+
+.footer .rgarea .list .desc{
+  width: 52px;
+  height: 14px;
+  margin: 5px 5px 0;
+  background: url(../images/foot_text.png) no-repeat;
+  background-size: 180px 139px;
+}
+.footer .rgarea .list .desc.t1{
+  width: 72px;
+  height: 14px;
+  margin: 5px 5px 0 -6px;
+  background-position: 0 -108px;
+}
+.footer .rgarea .list .desc.t2{
+  background-position:-1px -91px;
+}
+.footer .rgarea .list .desc.t3{
+  background-position: 0 0;
+}
+.footer .rgarea .list .desc.t4{
+  background-position: 0 -54px;
+}
+.footer .rgarea .list .desc.t5{
+  background-position: -1px -72px;
+}

@@ -1,0 +1,19 @@
+.apply{
+  /* display: inline-block; */
+  width: 210px;
+  /* height: 31px; */
+  margin-top: 10px;
+  box-sizing: border-box;
+  /* border: 1px solid #999; */
+  border-radius: 3px;
+  overflow: hidden;
+  /* line-height: 31px; */
+  /* text-align: center; */
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  background-color: #eee;
+
+  /* background:url(./images/btn_sprite.png) no-repeat right -100px ; */
+  /* padding-right: 5px; */
+}

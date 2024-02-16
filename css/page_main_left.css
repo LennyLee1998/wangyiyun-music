@@ -1,0 +1,375 @@
+.main .area .area-left {
+  width: 729px;
+  padding: 20px 20px 40px;
+  /* background-color: #f00; */
+}
+
+.recommend .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+/* 布局代码 */
+.recommend .list .item {
+  width: 140px;
+  margin-bottom: 30px;
+}
+
+.recommend .list .item .top {
+  /* background-color: #f00; */
+  position: relative;
+}
+
+.recommend .list .item .top img {
+  /* 将图片下面多出来的区域去除 */
+  /* 默认值：baseline */
+  /* vertical-align: top; */
+  display: block;
+
+}
+
+.recommend .list .item .top .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-image: url(../images/wyycoverall.png);
+  background-position: 0 0;
+
+  /* background-color: rgba(0, 0, 0, .5); */
+}
+
+.recommend .list .item .top .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 27px;
+  padding-left: 10px;
+  line-height: 27px;
+
+  font-size: 12px;
+  color: #ccc;
+
+  background-image: url(../images/wyycoverall.png);
+  background-position: 0 -537px;
+}
+
+.recommend .list .item .top .info .icon-music {
+  position: relative;
+  top: 1px;
+  background-position: 0 -24px;
+}
+
+.recommend .list .item .top .info .count {
+  margin-left: 4px;
+}
+
+.recommend .list .item .top .info .icon-play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto 0;
+
+
+
+}
+
+/* 底部的样式 */
+.recommend .list .item .bottom {
+  display: flex;
+  display: block;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.recommend .list .item .bottom:hover {
+  text-decoration: underline;
+}
+
+.recommend .list .item .bottom .icon-radio {
+  position: relative;
+  top: 2px;
+}
+
+/* 新碟上架 */
+.disc .content {
+  height: 186px;
+  margin: 20px 0;
+  border: 1px solid #d3d3d3;
+}
+
+.disc .content .inner {
+  position: relative;
+  height: 100%;
+  padding: 0 25px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  background-color: #f5f5f5;
+}
+
+.disc .content .inner .roller {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  /* background-color: #f00; */
+}
+
+.disc .content .inner .roller .list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+  flex-shrink: 0;
+
+  /* background-color: #0f0; */
+}
+
+.disc .content .inner .roller .list .item {
+  width: 118px;
+  height: 150px;
+  background: url(../images/main-sprite.png) no-repeat -260px 100px;
+}
+
+.disc .roller .list .item .album {
+  position: relative;
+}
+
+.disc .roller .list .item .album .cover {
+  position: absolute;
+  /* 整个大小为100% */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* width: 100px;
+  height: 100px; */
+  background: url(../images/wyycoverall.png) no-repeat 0 -570px;
+}
+
+.disc .roller .list .item .album:hover .play {
+  position: absolute;
+  bottom: 5px;
+  right: 23px;
+  width: 22px;
+  height: 22px;
+  background: url(../images/iconall.png) no-repeat 0 -85px;
+}
+
+.disc .roller .list .item a.title,
+.disc .roller .list .item a.author {
+  display: block;
+  margin-top: 5px;
+  padding-right: 20px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.disc .roller .list .item a.title {
+  color: #000;
+  margin-top: 8px;
+}
+
+.disc .roller .list .item a.author {
+  color: #666;
+}
+
+.disc .content .inner .control {
+  position: absolute;
+
+  /* background-color: #f00; */
+  width: 17px;
+  height: 17px;
+  top: 65px;
+  bottom: 0;
+  background-image: url(../images/main-sprite.png);
+
+}
+
+.disc .content .inner .control.left {
+  left: 5px;
+  background-position: -260px -75px;
+}
+
+.disc .content .inner .control.right {
+  right: 5px;
+
+  background-position: -300px -75px;
+
+}
+
+/* rank-section */
+.rank .content {
+  display: flex;
+  height: 472px;
+  margin-top: 20px;
+  /* background-color: #000; */
+  background-image: url(../images/index_bill.png);
+}
+
+.rank .content .rank {
+  width: 230px;
+  /* background-color: #00f; */
+}
+
+.rank .content .rank .header {
+  display: flex;
+  height: 120px;
+  box-sizing: border-box;
+  padding: 20px 0 0 20px;
+  /* background-color: #f00; */
+}
+
+.rank .content .rank .header .album {
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+}
+
+.rank .content .rank .header .album img {
+  width: 100%;
+  height: 100%;
+}
+
+.rank .content .rank .header .album .cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background: url(../images/wyycoverall.png) no-repeat -145px -57px;
+}
+
+.rank .content .rank .header .info {
+  margin: 6px 0 0 10px;
+}
+
+.rank .content .rank .header .info .title a {
+  font-size: 14px;
+  color: #333;
+}
+
+.rank .content .rank .header .info .title a:hover {
+  text-decoration: underline;
+}
+
+.rank .content .rank .header .info .operation {
+  margin-top: 12px;
+}
+
+.rank .content .rank .header .info .operation .btn {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../images/main-sprite.png) no-repeat;
+}
+
+.rank .content .rank .header .info .operation .btn.play {
+  background-position: -267px -205px;
+}
+
+.rank .content .rank .header .info .operation .btn.play:hover {
+  background-position: -267px -235px;
+}
+
+.rank .content .rank .header .info .operation .btn.favor {
+  background-position: -300px -205px;
+  margin-left: 8px;
+}
+
+.rank .content .rank .header .info .operation .btn.favor:hover {
+  background-position: -300px -235px;
+}
+
+.rank .content .rank .list {
+  padding-left: 20px;
+}
+
+.rank .content .rank .list .item {
+  display: flex;
+  height: 32px;
+  line-height: 32px;
+}
+
+.rank .content .rank .list .item .no {
+  width: 35px;
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+
+}
+
+.rank .content .rank .list .item:nth-child(-n+3) .no {
+  color: #c10d0c;
+
+}
+
+.rank .content .rank .list .item .song {
+  /* flex-grow为1，是会增长的，如果后面的东西没有了，会占据整行 */
+  /* 动态调整宽度 */
+  flex: 1;
+  /* 加省略号 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* background-color: #f00; */
+}
+
+.rank .content .rank .list .item .song:hover {
+  text-decoration: underline;
+}
+
+.rank .content .rank .list .item .operation {
+  display: none;
+  align-items: center;
+  width: 82px;
+}
+
+.rank .content .rank .list .item:hover .operation {
+  display: flex;
+}
+
+.rank .content .rank .list .item .operation .btn {
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  background: url(../images/main-sprite.png) no-repeat;
+}
+
+.rank .content .rank .list .item .operation .btn.play {
+
+
+  background-position: -267px -268px;
+}
+
+.rank .content .rank .list .item .operation .btn.add {
+  /* margin:2px 6px 0 0; */
+  background: url(../images/icon-sprite.png)no-repeat 2px -698px;
+}
+
+.rank .content .rank .list .item .operation .btn.btn.favor {
+  background-position: -297px -268px;
+}
+
+.rank .content .rank .list .more {
+  height: 32px;
+  padding-right: 32px;
+  line-height: 32px;
+  text-align: right;
+
+}
+
+.rank .content .rank .list .more:hover a {
+  text-decoration: underline;
+}

@@ -1,0 +1,115 @@
+.banner{
+  /* 背景图经过高斯模糊，设置background-size拉伸背景图即可 */
+  background: url(../images/banner-bg-01.jpg) no-repeat center center/6000px;
+}
+.banner .area{
+  position: relative;
+  height: 285px;
+  /* background-color: orange; */
+}
+.banner .area .area-left{
+  /* 给点作布局 */
+  position: relative;
+  width: 730px;
+}
+/* 图片列表 */
+.banner .area .area-left .img-list{
+  display: flex;
+  overflow: hidden;
+}
+.banner .area .area-left .img-list li{
+  /*让图片不要被压缩*/
+  flex-shrink: 0;
+  width: 100%;
+}
+.banner .area .area-left .img-list .item{
+  display: block;
+  /* width: 730px; */
+}
+.banner .area .area-left .img-list .item img{
+  /* 只设置了宽度，按比例缩放 */
+  width: 100%;
+  height: 285px;
+
+}
+/* 点的列表 */
+.banner .area .area-left .dots-list{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 7px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+}
+.banner .area .area-left .dots-list li{
+  margin: 0 2px;
+}
+
+.banner .area .area-left .dots-list .item{
+  display:inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/banner_sprite.png) no-repeat 3px -343px;
+}
+
+.banner .area .area-left .dots-list .item:hover,
+.banner .area .area-left .dots-list .item.active{
+  background-position:-16px -343px;
+}
+
+/* 右侧内容 */
+.banner .area .area-right{
+  position: absolute;
+  /* top bottom为0，则height会被拉伸 */
+  height: 285px;
+  
+  top: 0;
+  bottom: -285px;
+  /* 通过子绝父相来实现area-right的布局 */
+  right: -1px;
+  width: 254px;
+  /* background-color: purple; */
+  background: url(../images/download_sprite.png) no-repeat 0 0;
+}
+.banner .area .area-right .download{
+  display: block;
+  width: 215px;
+  height: 56px;
+  margin: 186px 0 0 19px;
+  text-indent: -9999px;
+}
+.banner .area .area-right .download:hover{
+  background: url(../images/download_sprite.png) no-repeat 0 -290px;
+}
+.banner .area .area-right .desc{
+  margin-top: 10px ;
+  text-align: center;
+  color:#8d8d8d ;
+}
+
+/* 两个控制的按钮 */
+.banner .area .control{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 37px;
+  height: 63px;
+  background-color: #f00;
+  background: url(../images/banner_sprite.png) no-repeat ;
+}
+.banner .area .control.left{
+  left:-70px;
+  background-position: 0 -360px;
+}
+.banner .area .control.left:hover{
+  background-position:0 -430px;
+}
+.banner .area .control.right{
+  right:-70px;
+  background-position: 0 -508px;
+}
+.banner .area .control.right:hover{
+  background-position:0 -578px;
+}

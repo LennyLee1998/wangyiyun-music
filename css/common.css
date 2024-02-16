@@ -1,0 +1,138 @@
+body{
+  font: 12px Arial, Helvetica, sans-serif;
+}
+.wrapper_01{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper_02{
+  width: 980px;
+  margin: 0 auto
+
+}
+.wrapper_03{
+  width: 982px;
+  margin: 0 auto;
+}
+
+/* top_sprite */
+/* 抽取的思想,抽取是为了方便之后的复用，如果一个东西不会复用，那么抽取也没有意义 */
+.topbar_sprite{
+  display: inline-block;
+  background-image: url(../images/topbar_sprite.png);
+}
+
+.topbar_icon_hot{
+  width: 28px;
+  height: 19px;
+  background-position: -190px 0;
+}
+
+/* btn_sprite */
+.btn_sprite{
+  display: inline-block;
+  background:url(../images/btn_sprite.png);
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+}
+
+/* superclass 父类 */
+.btn_type_01_sup{
+  background-position: right -100px;
+  padding-right: 5px;
+}
+/* subclass 子类 */
+.btn_type_01_sub{
+  display: block;
+  height: 31px;
+  padding-left: 5px;
+  background-position:0 -59px; 
+}
+
+/* 里面固定是i */
+/* .btn_type_01_sup>i{
+    display: block;
+    height: 31px;
+    padding-left: 5px;
+    background:url(../images/btn_sprite.png) 0 -59px;
+} */
+
+/* superclass 父类 */
+.btn_type_02_sup{
+  background-position: right -1020px;
+  padding-right: 4px;
+}
+/* subclass 子类 */
+.btn_type_02_sub{
+  display: block;
+  height: 31px;
+  padding-left: 28px;
+  padding-right: 6px;
+  background-position:0 -977px; 
+}
+
+/* superclass 父类 */
+.btn_play_sup{
+  background-position: right -428px;
+  padding-right: 5px;
+}
+/* subclass 子类 */
+.btn_play_sub{
+  display: block;
+  height: 31px;
+  padding-left:8px;
+  padding-right: 7px;
+  background-position:0 -387px; 
+}
+
+.btn_playicon_sub{
+  display:inline-block;
+  width: 20px;
+  height: 18px;
+  line-height: 18px;
+  text-indent: -9999px;
+  background-position:0 -1622px; 
+
+}
+.btn_add_sup{
+  display:inline-block;
+  width: 31px;
+  margin-left: -6px;
+  line-height: 31px;
+  text-indent: -9999px;
+  background-position: 0 -1588px;
+}
+
+/* icon_sprite */
+.icon_sprite{
+  display: inline-block;
+  background-image: url(../images/iconall.png);
+}
+
+.icon_sprite_music{
+  background-position: 0 -24px;
+  width: 14px;
+  height: 11px;
+}
+
+.icon_sprite_play_01{
+  background-position: 0 0;
+  width: 16px;
+  height: 17px;
+}
+
+.iconall_sprite{
+  display: inline-block;
+  background-image: url(../images/icon-sprite.png);
+}
+
+.iconall_sprite_radio{
+    width: 35px;
+    height: 15px;
+    background-position:-31px -658px;
+  }
+
+
+

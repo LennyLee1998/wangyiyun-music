@@ -1,0 +1,15 @@
+.back{
+  position: fixed;
+  left: 50%;
+  bottom: 160px;
+  display: inline-block;
+  width: 49px;
+  height: 44px;
+  margin-left: 500px;
+  text-indent: -9999px;
+  background: url(../images/fixed_sprite.png) no-repeat -265px -47px;
+}
+
+.back:hover{
+  background-position:-325px -47px;
+}

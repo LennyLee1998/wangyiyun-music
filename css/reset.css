@@ -1,0 +1,29 @@
+body,h1,h2,h3,ul,li,p,dd,dl,dt,ol{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color:#000;
+}
+
+ul,li,ol{
+  list-style: none;
+}
+
+/* 重置样式 */
+input{
+  /* 点进去是否有轮廓 */
+  outline:none;
+  border: none;
+
+}
+
+img{
+  vertical-align: top;
+}
+
+i{
+  font-style: normal;
+}

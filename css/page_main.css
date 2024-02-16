@@ -1,0 +1,10 @@
+/* 主要内容main的css */
+.main>.area {
+  display: flex;
+  justify-content: space-between;
+  /* height: 500px; */
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
+  /* background-color: orange; */
+  background: url(../images/main-bg.png);
+}

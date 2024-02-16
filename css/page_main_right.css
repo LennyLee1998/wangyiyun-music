@@ -1,0 +1,91 @@
+/* 右侧区域 */
+.area .area-right{
+  width: 250px;
+  /* background-color: #0f0; */
+}
+.area .area-right .user-login{
+  height: 126px;
+  /* padding-top: 16px;
+  box-sizing: border-box; */
+  /* background-color: #f00; */
+  background: url(../images/main-sprite.png) no-repeat 0 0;
+}
+.area .area-right .user-login .desc{
+  width: 205px;
+  padding: 16px 0;
+  margin: 0 auto;
+  line-height: 22px;
+  /* text-align: center; */
+  color: #666;
+}
+.area .area-right .user-login .login-btn{
+  display:block;
+  width: 100px;
+  height: 31px;
+  margin: 0 auto;
+  line-height: 31px;
+  text-align: center;
+  color: #fff;
+  background: url(../images/main-sprite.png)  0 -195px;
+  text-shadow: 0 1px 0 #8a060b;
+}
+.area .area-right .user-login .login-btn:hover{
+  background-position:-110px -195px;
+}
+
+.area .settle-singer,.area .hot-anchor{
+  padding:20px;
+}
+
+.area .settle-singer .list{
+  padding: 6px 0;
+
+}
+.area .settle-singer .list .item{
+  /* 如果设置的是inline-flex，会当成是行内元素 */
+  /* 如果设置display:flex时，会被当成是block,所以可以设置宽度和高度 */
+  display: flex;
+  margin-top: 14px;
+  height: 62px;
+  background-color:  #fafafa;
+ 
+}
+.area .settle-singer .list .item:hover{
+  background-color: #f4f4f4;
+}
+
+.area .settle-singer .list .item .info{
+  /* flex:1;也是一样的作用 */
+  flex-grow: 1;
+  /*换main-axis给两行文字居中 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* 为了给后面的desc百分比作基数 */
+  /* width: 133px; */
+  padding-left: 14px;
+  border: 1px solid #e9e9e9;
+  border-left:none;
+  /* background-color: #f00; */
+  
+  overflow: hidden;
+}
+
+.area .settle-singer .list .item .info .singer{
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+.area .settle-singer .list .item .info .desc{
+  /* 是info内容的90% */
+  width: 90%;
+  font-size: 12px;
+  color: #666;
+
+  /* margin-top: 8px; */
+  /* 文本超出后显示省略号 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
